@@ -3,95 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KAIxGEN | Startup 3.0</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+<title>KAIxGEN | Professional Marketplace</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 
 body{
-background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#000);
-background-size:400% 400%;
-animation: gradientMove 20s ease infinite;
-color:white;
-overflow-x:hidden;
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
 }
 
-@keyframes gradientMove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
-/* NAVBAR */
+/* Navbar */
 .navbar{
 position:fixed;
-top:0;
 width:100%;
-padding:20px 40px;
+top:0;
+background:#0f172a;
+padding:20px 60px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,0.3);
-backdrop-filter:blur(20px);
-z-index:999;
+border-bottom:1px solid #1e293b;
+z-index:1000;
 }
 
 .navbar a{
-color:white;
+color:#cbd5e1;
 text-decoration:none;
-margin-left:20px;
+margin-left:25px;
 font-weight:500;
+transition:0.3s;
 }
 
-/* HERO */
+.navbar a:hover{
+color:white;
+}
+
+/* Hero */
 .hero{
-padding-top:140px;
+padding:160px 20px 120px;
 text-align:center;
 max-width:900px;
 margin:auto;
 }
 
 .hero h1{
-font-size:52px;
+font-size:48px;
+font-weight:700;
 margin-bottom:20px;
-min-height:70px;
 }
 
 .hero p{
-opacity:0.85;
 font-size:18px;
-margin-bottom:30px;
+color:#94a3b8;
+margin-bottom:35px;
 }
 
 .btn{
-padding:15px 30px;
-border-radius:40px;
+padding:14px 28px;
+border-radius:8px;
 text-decoration:none;
 font-weight:600;
-margin:10px;
+margin:8px;
 display:inline-block;
-transition:0.3s ease;
+transition:0.3s;
 }
 
 .primary{
-background:white;
-color:black;
-}
-
-.secondary{
-border:2px solid white;
+background:#2563eb;
 color:white;
 }
 
-.btn:hover{
-transform:translateY(-6px);
-box-shadow:0 0 20px #00f2ff;
+.secondary{
+border:1px solid #334155;
+color:#cbd5e1;
 }
 
-/* SECTION */
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* Sections */
 .section{
-padding:120px 20px;
+padding:100px 20px;
 max-width:1100px;
 margin:auto;
 }
@@ -99,10 +95,10 @@ margin:auto;
 .section h2{
 text-align:center;
 margin-bottom:60px;
-font-size:32px;
+font-size:30px;
 }
 
-/* GRID */
+/* Grid */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -110,37 +106,28 @@ gap:30px;
 }
 
 .card{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(20px);
+background:#1e293b;
 padding:40px;
-border-radius:20px;
-transition:0.3s ease;
+border-radius:12px;
+transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
-background:rgba(255,255,255,0.15);
+background:#334155;
 }
 
-/* STATS */
-.stats{
-display:flex;
-justify-content:center;
-gap:60px;
-flex-wrap:wrap;
-text-align:center;
+/* Pricing */
+.price{
+font-size:32px;
+margin:15px 0;
 }
 
-.stat h3{
-font-size:40px;
-margin-bottom:10px;
-}
-
-/* FOOTER */
+/* Footer */
 footer{
 text-align:center;
 padding:60px 20px;
-opacity:0.6;
+background:#0b1220;
+color:#64748b;
 }
 </style>
 </head>
@@ -151,17 +138,17 @@ opacity:0.6;
 <div><strong>KAIxGEN</strong></div>
 <div>
 <a href="#features">Features</a>
-<a href="#network">Network</a>
-<a href="#about">About</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
 </div>
 </div>
 
 <!-- HERO -->
 <div class="hero">
-<h1 id="typing"></h1>
+<h1>Professional Telegram Marketplace</h1>
 <p>
-Next-Gen Telegram Marketplace designed for clarity,
-security and scalable digital systems.
+Secure. Structured. Transparent.
+Designed for scalable digital services and automation systems.
 </p>
 
 <a href="https://t.me/KAIxNextGen" class="btn primary" target="_blank">Visit Marketplace</a>
@@ -170,104 +157,66 @@ security and scalable digital systems.
 
 <!-- FEATURES -->
 <div class="section" id="features">
-<h2>Core Advantages</h2>
+<h2>Core Capabilities</h2>
 <div class="grid">
-<div class="card">
-<h3>Verified Services</h3>
-<p>Structured listings with transparency-first approach.</p>
-</div>
 
 <div class="card">
-<h3>Transparent Pricing</h3>
-<p>No hidden conditions. Clear communication.</p>
+<h3>Verified Listings</h3>
+<p>All services reviewed and structured for transparency.</p>
 </div>
 
 <div class="card">
-<h3>Automation Ready</h3>
-<p>Integrated bot system and scalable workflows.</p>
+<h3>Automation Infrastructure</h3>
+<p>Bot-based integrations and scalable system architecture.</p>
 </div>
+
+<div class="card">
+<h3>Security First</h3>
+<p>Strict standards against scams and misleading promotions.</p>
+</div>
+
 </div>
 </div>
 
-<!-- STATS -->
-<div class="section">
-<h2>Platform Metrics</h2>
-<div class="stats">
-<div class="stat">
-<h3 id="stat1">0</h3>
-<p>Community Members</p>
-</div>
-<div class="stat">
-<h3 id="stat2">0</h3>
-<p>Active Listings</p>
-</div>
-<div class="stat">
-<h3 id="stat3">0</h3>
-<p>Verified Services</p>
-</div>
-</div>
-</div>
-
-<!-- NETWORK -->
-<div class="section" id="network">
-<h2>Network</h2>
+<!-- PRICING -->
+<div class="section" id="pricing">
+<h2>Pricing Model</h2>
 <div class="grid">
+
 <div class="card">
-<h3>UnRealHexOfficial</h3>
-<a href="https://t.me/UnRealHexOfficial" target="_blank">Join</a>
+<h3>Starter</h3>
+<div class="price">₹499</div>
+<p>Basic listing & support</p>
 </div>
+
 <div class="card">
-<h3>Depressed Empire</h3>
-<a href="https://t.me/DepressedEmpire" target="_blank">Join</a>
+<h3>Professional</h3>
+<div class="price">₹1499</div>
+<p>Priority listing & automation integration</p>
 </div>
+
 <div class="card">
-<h3>Late Night Chats</h3>
-<a href="https://t.me/LateNightChatGroup" target="_blank">Join</a>
+<h3>Enterprise</h3>
+<div class="price">Custom</div>
+<p>Full infrastructure & premium support</p>
 </div>
+
 </div>
 </div>
 
-<!-- ABOUT -->
-<div class="section" id="about">
-<h2>Founder</h2>
-<div class="card">
-<p>
-Built by GOKUxEDITION — focused on Telegram automation,
-marketplace systems and structured digital growth.
-</p>
+<!-- CONTACT -->
+<div class="section" id="contact">
+<h2>Get in Touch</h2>
+<div class="card" style="text-align:center;">
+<p>For collaboration or inquiries:</p>
+<br>
+<a href="https://t.me/GOKUxEDITION" class="btn primary" target="_blank">Contact Founder</a>
 </div>
 </div>
 
 <footer>
-© 2026 KAIxGEN — Startup 3.0 Edition
+© 2026 KAIxGEN — Professional Edition
 </footer>
-
-<script>
-/* Typing Effect */
-const text="KAIxGEN — Next-Gen Marketplace";
-let i=0;
-function type(){
-if(i<text.length){
-document.getElementById("typing").innerHTML+=text.charAt(i);
-i++;
-setTimeout(type,60);
-}
-}
-type();
-
-/* Stats Counter */
-function counter(id,target){
-let count=0;
-let interval=setInterval(()=>{
-count+=Math.ceil(target/50);
-if(count>=target){count=target;clearInterval(interval);}
-document.getElementById(id).innerText=count;
-},40);
-}
-counter("stat1",5000);
-counter("stat2",120);
-counter("stat3",85);
-</script>
 
 </body>
 </html>
