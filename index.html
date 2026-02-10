@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOKUxEDITION | AI Futuristic</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1c1c1c);
+background-size:400% 400%;
+animation: gradientMove 15s ease infinite;
+overflow-x:hidden;
+color:white;
+cursor:none;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* AI Logo Intro */
+#intro{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+animation: fadeOut 3s ease forwards;
+animation-delay:2.5s;
+}
+
+.logo-text{
+font-size:36px;
+letter-spacing:4px;
+animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px #00f2ff;}
+to{ text-shadow:0 0 25px #00f2ff,0 0 40px #00f2ff;}
+}
+
+@keyframes fadeOut{
+to{opacity:0;visibility:hidden;}
+}
+
+/* Cursor Trail */
+.trail{
+position:fixed;
+width:12px;
+height:12px;
+border-radius:50%;
+background:rgba(0,242,255,0.8);
+pointer-events:none;
+transform:translate(-50%,-50%);
+animation:fadeTrail 0.5s linear forwards;
+}
+
+@keyframes fadeTrail{
+to{
+opacity:0;
+transform:translate(-50%,-50%) scale(0.3);
+}
+}
+
+/* Glass UI */
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+position:relative;
+z-index:2;
+}
+
+.glass{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border-radius:20px;
+padding:30px;
+margin-bottom:25px;
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+h1{
+text-align:center;
+font-size:32px;
+margin-bottom:10px;
+}
+
+.tagline{
+text-align:center;
+opacity:0.8;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.btn{
+display:block;
+text-decoration:none;
+padding:14px;
+border-radius:12px;
+text-align:center;
+font-weight:500;
+color:white;
+background:rgba(255,255,255,0.15);
+transition:all 0.3s ease;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.btn:hover{
+transform:translateY(-8px) scale(1.07);
+background:rgba(255,255,255,0.35);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+.skills-list{
+line-height:1.8;
+font-size:15px;
+}
+
+footer{
+text-align:center;
+opacity:0.6;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="intro">
+<div class="logo-text">◆ GOKUxEDITION ◆</div>
+</div>
+
+<script>
+document.addEventListener("mousemove", function(e){
+let trail = document.createElement("div");
+trail.className = "trail";
+trail.style.left = e.clientX + "px";
+trail.style.top = e.clientY + "px";
+document.body.appendChild(trail);
+setTimeout(()=>{trail.remove();},500);
+});
+</script>
+
+<div class="container">
+
+<div class="glass">
+<h1>◆ GOKUxEDITION ◆</h1>
+<p class="tagline">AI Futuristic Telegram Branding | Bots | Growth</p>
+</div>
+
+<div class="glass">
+<h2>CHANNELS</h2>
+<div class="grid">
+
+<a href="https://t.me/KAIxNextGen" target="_blank" class="btn">
+𝗡𝗲𝘅𝘁-𝗚𝗲𝗻 𝗠𝗮𝗿𝗸𝗲𝘁𝗽𝗹𝗮𝗰𝗲
+</a>
+
+<a href="https://t.me/KAIxGen" target="_blank" class="btn">
+ᴋᴧɪ ꭙ 𝑮𝜺𝜼
+</a>
+
+<a href="https://t.me/UnRealHexOfficial" target="_blank" class="btn">
+UnRealHexOfficial
+</a>
+
+<a href="https://t.me/LateNightChatGroup" target="_blank" class="btn">
+✨ Lᴀᴛᴇ Nɪɢʜᴛ Chats ✨
+</a>
+
+</div>
+</div>
+
+<div class="glass">
+<h2>🆂🅺🅸🅻🅻🆂 🅰🅽🅳 🅴🆇🅿🅴🆁🆃</h2>
+<div class="skills-list">
+1 • BOT MAKING <br>
+2 • BGMI CHEAT MAKING <br>
+3 • LOGO MAKING <br>
+4 • Portfolio Website Making <br>
+5 • HTML • PYTHON • C++ • JAVA
+</div>
+</div>
+
+<footer>
+© 2026 GOKUxEDITION — AI Edition
+</footer>
+
+</div>
+
+</body>
+</html>
